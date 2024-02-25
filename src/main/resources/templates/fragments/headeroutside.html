@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="header">
+  <header class="navbar-light navbar-sticky header-static">
+    <!-- Nav START -->
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid px-3 px-xl-5">
+        <!-- Logo START -->
+        <a class="navbar-brand" href="index.html">
+          <img class="light-mode-item navbar-brand-item" th:src="@{/assets/images/ebox.png}" alt="logo">
+
+        </a>
+        <!-- Logo END -->
+
+        <!-- Responsive navbar toggler -->
+
+
+        <!-- Main navbar START -->
+        <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
+
+        </div>
+        <!-- Main navbar END -->
+
+        <!-- Profile START -->
+        <div class="dropdown ms-1 ms-lg-0 d-flex align-items-center">
+          <a class="btn btn-dark btn-xs" href="#">Sign In <i class="fas fa-angle-right ms-2"></i></a>
+
+
+        </div>
+        <!-- Profile START -->
+      </div>
+    </nav>
+    <!-- Nav END -->
+  </header>
+
+</div>
+</body>
+</html>

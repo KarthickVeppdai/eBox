@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/insidelayout">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+  <div class="card bg-transparent border rounded-3">
+    <!-- Card header START -->
+    <div class="card-header bg-transparent border-bottom">
+      <h3 class="mb-0">Affordable Subscription Plan's</h3>
+    </div>
+  </div>
+  <div class="d-xl-flex">
+
+    <div class="col-md-3 col-xl-4">
+      <div class="card border rounded-3 p-2 p-sm-4 h-100">
+        <!-- Card Header -->
+        <div class="card-header p-0">
+          <!-- Price and Info -->
+          <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded-2">
+            <!-- Info -->
+            <div>
+              <h5 class="mb-0">Student's</h5>
+              <div class="badge text-bg-dark mb-0 rounded-pill">Most popular</div>
+            </div>
+            <!-- Price -->
+            <div>
+              <h4 class="text-success mb-0 plan-price" data-monthly-price="$20" data-annual-price="$570">&#8377;29</h4>
+              <p class="small mb-0">/ per user</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+
+
+        <!-- Card Body -->
+        <div class="card-body pt-0">
+          <ul class="list-unstyled mt-2 mb-0">
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>10 messages/day</li>
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>2 Subject's</li>
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>Only one Grade</li>
+          </ul>
+        </div>
+        <!-- Card Footer -->
+        <div class="card-footer text-center d-grid pb-0">
+          <button type="button" class="btn btn-light mb-0">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing item END -->
+
+    <!-- Pricing item START -->
+    <div class="col-md-3 col-xl-4">
+      <div class="card border rounded-3 p-2 p-sm-4 h-100">
+        <!-- Card Header -->
+        <div class="card-header p-0">
+          <!-- Price and Info -->
+          <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded-2">
+            <!-- Info -->
+            <div>
+              <h5 class="mb-0">Parents's</h5>
+              <div class="badge bg-grad mb-0 rounded-pill">Recommended</div>
+            </div>
+            <!-- Price -->
+            <div>
+              <h4 class="text-success mb-0 plan-price" data-monthly-price="&#8377;49">&#8377;49</h4>
+              <p class="small mb-0">/ per user</p>
+            </div>
+          </div>
+        </div>
+        <!-- Divider -->
+
+
+        <!-- Card Body -->
+        <div class="card-body pt-0">
+          <ul class="list-unstyled mt-2 mb-0">
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>30 messages/day</li>
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>5 Subject/day</li>
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>Two Class</li>
+          </ul>
+        </div>
+        <!-- Card Footer -->
+        <div class="card-footer text-center d-grid pb-0">
+          <button type="button" class="btn btn-dark mb-0">Checkout</button>
+        </div>
+      </div>
+    </div>
+    <!-- Pricing item END -->
+
+    <!-- Pricing item START -->
+    <div class="col-md-3 col-xl-4">
+      <div class="card border rounded-3 p-2 p-sm-4 h-100">
+        <!-- Card Header -->
+        <div class="card-header p-0">
+          <!-- Price and Info -->
+          <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded-2">
+            <!-- Info -->
+            <div>
+              <h5 class="mb-0">School</h5>
+              <div class="badge text-bg-dark mb-0 rounded-pill">Best value</div>
+            </div>
+            <!-- Price -->
+            <div>
+              <h4 class="text-success mb-0 plan-price" data-monthly-price="&#8377;" data-annual-price="&#8377;"></h4>
+              <p class="small mb-0"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+
+
+        <!-- Card Body -->
+        <div class="card-body pt-0">
+          <ul class="list-unstyled mt-2 mb-0">
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>Unlimited Messages</li>
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>Unlimited Subject</li>
+            <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>Unlimited Grades</li>
+          </ul>
+        </div>
+        <!-- Card Footer -->
+        <div class="card-footer text-center d-grid pb-0">
+          <button type="button" class="btn btn-light mb-0">Contact Us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

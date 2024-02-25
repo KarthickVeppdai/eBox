@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/insidelayout">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+  <div class="card bg-transparent border rounded-3">
+    <!-- Card header START -->
+    <div class="card-header bg-transparent border-bottom">
+      <h3 class="mb-0">Checkout</h3>
+    </div>
+  </div>
+  <!-- Alert -->
+  <div class="d-xl-flex">
+
+    <!-- Personal info START -->
+    <div class="col-xl-8 g-xl-3">
+
+      <!-- Title -->
+
+
+      <!-- Form START -->
+
+      <!-- Form END -->
+
+      <!-- Payment method START -->
+
+      <div class="card card-body shadow p-4 mb-4">
+        <!-- Title -->
+        <h5 class="">Payment method</h5>
+
+
+
+
+        <!-- Form START -->
+        <form class="row">
+
+          <!-- Card number -->
+          <div class="col-12">
+            <label class="form-label">Card Number <span class="text-danger">*</span></label>
+            <div class="position-relative">
+              <input type="text" class="form-control" placeholder="xxxx xxxx xxxx xxxx">
+              <img src="assets/images/client/visa.svg" class="w-40px position-absolute top-50 end-0 translate-middle-y me-2 d-none d-sm-block" alt="">
+            </div>
+          </div>
+          <!-- Expiration Date -->
+          <div class="col-md-6">
+            <label class="form-label">Expiration date <span class="text-danger">*</span></label>
+            <div class="input-group">
+              <input type="text" class="form-control" maxlength="2" placeholder="Month">
+              <input type="text" class="form-control" maxlength="4" placeholder="Year">
+            </div>
+          </div>
+          <!--Cvv code  -->
+          <div class="col-md-6">
+            <label class="form-label">CVV / CVC <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" maxlength="3" placeholder="xxx">
+          </div>
+          <!-- Card name -->
+          <div class="col-12">
+            <label class="form-label">Name on Card <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" aria-label="name of card holder" placeholder="Enter card holder name">
+          </div>
+        </form>
+        <!-- Form END -->
+
+
+        <!-- Credit or debit card END -->
+
+        <!-- Net banking START -->
+
+
+        <!-- Net banking END -->
+
+
+      </div>
+
+      <!-- Payment method END -->
+    </div>
+    <!-- Personal info END -->
+
+    <!-- Main content END -->
+
+    <!-- Right sidebar START -->
+    <div class="col-xl-4">
+      <div class="col-md-6 col-xl-12">
+        <!-- Order summary START -->
+        <div class="card card-body shadow p-4 mb-4">
+          <!-- Title -->
+          <h4 class="mb-4">Order Summary</h4>
+
+          <!-- Coupon START -->
+
+          <hr>
+          <!-- Coupon END -->
+
+          <!-- Course item START -->
+          <div class="row g-3">
+            <!-- Image -->
+
+            <!-- Info -->
+            <div class="col-sm-12">
+              <h6 class="mb-0"><a href="#">Student Plan</a></h6>
+              <!-- Info -->
+              <div class="d-flex justify-content-between align-items-center mt-3">
+                <!-- Price -->
+                <span class="text-success">$29</span>
+
+                <!-- Remove and edit button -->
+                <div class="text-primary-hover">
+                  <a href="#" class="text-body me-2"><i class="bi bi-trash me-1"></i>Remove</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Course item END -->
+
+          <hr> <!-- Divider -->
+
+          <!-- Course item START -->
+
+          <!-- Course item END -->
+
+          <hr> <!-- Divider -->
+
+          <!-- Price and detail -->
+          <ul class="list-group list-group-borderless mb-2">
+            <li class="list-group-item px-0 d-flex justify-content-between">
+              <span class="h6 fw-light mb-0">Original Price</span>
+              <span class="h6 fw-light mb-0 fw-bold">$500</span>
+            </li>
+            <li class="list-group-item px-0 d-flex justify-content-between">
+              <span class="h6 fw-light mb-0">Coupon Discount</span>
+              <span class="text-danger">-$20</span>
+            </li>
+            <li class="list-group-item px-0 d-flex justify-content-between">
+              <span class="h5 mb-0">Total</span>
+              <span class="h5 mb-0">$480</span>
+            </li>
+          </ul>
+
+          <!-- Button -->
+          <div class="d-grid">
+            <a href="#" class="btn btn-lg btn-success">Place Order</a>
+          </div>
+
+          <!-- Content -->
+
+
+        </div>
+        <!-- Order summary END -->
+      </div>
+
+
+      <!-- Row End -->
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

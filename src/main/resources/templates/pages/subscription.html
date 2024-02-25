@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/insidelayout">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+  <div class="card bg-transparent border rounded-3">
+    <!-- Card header START -->
+    <div class="card-header bg-transparent border-bottom">
+      <h3 class="mb-0">Subscription Details</h3>
+    </div>
+  </div>
+  <div class="card card-body bg-transparent border rounded-3">
+    <!-- Update plan START -->
+    <div class="row g-4">
+      <!-- Update plan item -->
+      <div class="col-6 col-lg-3">
+        <span>Active Plan</span>
+        <h4>Student</h4>
+      </div>
+      <!-- Update plan item -->
+      <div class="col-6 col-lg-3">
+        <span>Daily limit</span>
+        <h4>10 Questions</h4>
+      </div>
+      <!-- Update plan item -->
+      <div class="col-6 col-lg-3">
+        <span>Cost</span>
+        <h4>$29/Month</h4>
+      </div>
+
+      <!-- Update plan item -->
+      <div class="col-6 col-lg-3">
+        <span>Renewal Date</span>
+        <h4>Mar 14, 2024</h4>
+      </div>
+    </div>
+    <!-- Update plan END -->
+
+    <!-- Progress bar -->
+
+
+    <!-- Button -->
+
+    <!-- Divider -->
+
+
+    <!-- Plan Benefits -->
+    <div class="row">
+      <h6 class="mb-3">Current includes</h6>
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>10 Question/Day</li>
+          <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>2 Subjects per Account</li>
+          <li class="mb-3 h6 fw-light"><i class="bi bi-patch-check-fill text-success me-2"></i>Only one Grade</li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-sm-flex justify-content-sm-between align-items-center">
+
+      <!-- Buttons -->
+      <div class="mt-2 mt-sm-0">
+        <a href="#" class="btn btn-sm btn-success mb-0">Upgrade plan</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

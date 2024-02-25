@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/insidelayout">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+    <div class="card bg-transparent border rounded-3">
+        <!-- Card header START -->
+        <div class="card-header bg-transparent border-bottom">
+            <h3 class="mb-0">New Subject</h3>
+        </div>
+    </div>
+    <!-- Counter boxes START -->
+    <form class="bg-light border p-4 rounded-3 z-index-9 position-relative">
+        <div class="row g-1">
+            <!-- Input -->
+
+            <!-- Select item -->
+            <div class="col-xl-10">
+                <div class="row g-3">
+                    <div class="col-xl-3">
+
+                    </div>
+                    <!-- Select items -->
+                    <div class="col-sm-6 col-md-3 pb-2 pb-md-0">
+                        <select class="form-select form-select-sm js-choice" aria-label=".form-select-sm example">
+                            <option value="">Class</option>
+                            <option>Class 1</option>
+                            <option>Class 2</option>
+                            <option>Class 3</option>
+                            <option>Class 4</option>
+                            <option>Class 5</option>
+                            <option>Class 6</option>
+                            <option>Class 7</option>
+                            <option>Class 8</option>
+                            <option>Class 9</option>
+                            <option>Class 10</option>
+                        </select>
+                    </div>
+
+                    <!-- Search item -->
+
+
+                    <!-- Search item -->
+                    <div class="col-sm-6 col-md-3 pb-2 pb-md-0">
+                        <select class="form-select form-select-sm js-choice" aria-label=".form-select-sm example">
+                            <option value="">Subjects</option>
+                            <option>English</option>
+                            <option>Maths</option>
+                            <option>Science</option>
+                            <option>Socail Science</option>
+                        </select>
+                    </div>
+
+                </div> <!-- Row END -->
+            </div>
+            <!-- Button -->
+            <div class="col-xl-2">
+                <button type="button" class="btn btn-primary mb-0 rounded z-index-1 w-100"><i class="fas fa-plus-circle"></i>Add Subject</button>
+            </div>
+        </div> <!-- Row END -->
+    </form>    <!-- Counter boxes END -->
+
+    <div class="card bg-transparent border rounded-3">
+        <!-- Card header START -->
+        <div class="card-header bg-transparent border-bottom">
+            <h3 class="mb-0">My Subject List</h3>
+        </div>
+        <!-- Card header END -->
+
+        <!-- Card body START -->
+        <div class="card-body">
+
+            <!-- Search and select START -->
+
+            <!-- Search and select END -->
+
+            <!-- Course list table START -->
+            <div class="table-responsive border-0">
+                <table class="table table-dark-gray align-middle p-4 mb-0 table-hover">
+                    <!-- Table head -->
+                    <thead>
+                    <tr>
+                        <th scope="col" class="border-0 rounded-start">Subjects</th>
+                        <th scope="col" class="border-0">Learned</th>
+                        <th scope="col" class="border-0 rounded-end">Continue</th>
+                        <th scope="col" class="border-0 rounded-end">Remove</th>
+                    </tr>
+                    </thead>
+
+                    <!-- Table body START -->
+                    <tbody>
+                    <!-- Table item -->
+                    <tr>
+                        <!-- Table data -->
+                        <td>
+                            <div class="d-flex align-items-center position-relative">
+                                <!-- Image -->
+
+                                <div class="mb-0 ms-2 d-flex">
+                                    <!-- Title -->
+                                    <i class="fa fa-book me-2"></i>
+                                    <h6 class="mb-0"><a href="#" class="stretched-link">Class 9 :Social</a></h6>
+                                    <!-- Address -->
+                                </div>
+                            </div>
+                        </td>
+
+                        <!-- Table data -->
+
+
+                        <!-- Table data -->
+                        <td>10</td>
+
+                        <!-- Table data -->
+
+
+                        <!-- Table data -->
+                        <td>
+
+                            <button class="btn btn-info-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Continue"><i class="bi bi-play-circle me-1"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="fas fa-ban"></i></button>
+                        </td>
+                    </tr>
+
+                    <!-- Table item -->
+                    <tr>
+                        <!-- Table data -->
+                        <td>
+                            <div class="d-flex align-items-center position-relative">
+                                <!-- Image -->
+
+                                <div class="mb-0 ms-2 d-flex">
+                                    <!-- Title -->
+                                    <i class="fa fa-book me-2"></i>
+                                    <h6 class="mb-0"><a href="#" class="stretched-link">Class 9 :Maths</a></h6>
+                                    <!-- Address -->
+                                </div>
+                            </div>
+                        </td>
+
+                        <!-- Table data -->
+
+
+                        <!-- Table data -->
+                        <td>12</td>
+
+                        <!-- Table data -->
+
+
+                        <!-- Table data -->
+                        <td>
+
+                            <button class="btn btn-info-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="bi bi-play-circle me-1"></i></button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="fas fa-ban"></i></button>
+                        </td>
+                    </tr>
+
+                    <!-- Table item -->
+
+
+                    <!-- Table item -->
+
+
+                    <!-- Table item -->
+
+
+                    <!-- Table item -->
+
+                    </tbody>
+                    <!-- Table body END -->
+                </table>
+            </div>
+            <!-- Student list table END -->
+
+            <!-- Pagination START -->
+            <div class="d-sm-flex justify-content-sm-between align-items-sm-center mt-4 mt-sm-3">
+                <!-- Content -->
+
+                <!-- Pagination -->
+                <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
+                    <ul class="pagination pagination-sm pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
+                        <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
+                        <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Pagination END -->
+        </div>
+        <!-- Card body START -->
+    </div>
+</div>
+
+</body>
+</html>
