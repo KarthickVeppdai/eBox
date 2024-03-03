@@ -47,4 +47,16 @@ public class MainController {
     {
         return "pages/editprofile";
     }
+
+    @GetMapping("/paymenthistory")
+    public String paymenthistory()
+    {
+        return "pages/paymenthistory";
+    }
+
+    @GetMapping("/addsubject")
+    public String addsubject()
+    {
+        return "pages/addsubject";
+    }
 }

@@ -18,11 +18,14 @@
         <div class="bg-dark border rounded-3 p-3 w-100">
           <!-- Dashboard menu -->
           <div class="list-group list-group-dark list-group-borderless collapse-list">
-            <a class="list-group-item active" href="student-dashboard.html"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
-            <a class="list-group-item" href="student-subscription.html"><i class="bi bi-card-checklist fa-fw me-2"></i>My Subscriptions</a>
-            <a class="list-group-item" href="student-payment-info.html"><i class="bi bi-credit-card-2-front fa-fw me-2"></i>Payment Info</a>
-            <a class="list-group-item" href="instructor-edit-profile.html"><i class="bi bi-pencil-square fa-fw me-2"></i>Edit Profile</a>
-            <a class="list-group-item text-danger bg-danger-soft-hover" href="#"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Sign Out</a>
+            <a class="list-group-item active" th:href="@{/home/student}"><i class="bi bi-ui-checks-grid fa-fw me-2"></i>Dashboard</a>
+            <a class="list-group-item" th:href="@{/home/chat}"><i class="fa fa-comment me-2"></i>Chat</a>
+            <a class="list-group-item" th:href="@{/home/addsubject}"><i class="fa fa-plus fa-fw me-2"></i>Add New Subject</a>
+            <a class="list-group-item" th:href="@{/home/subscription}"><i class="bi bi-card-checklist fa-fw me-2"></i>My Subscriptions</a>
+            <a class="list-group-item" th:href="@{/home/checkout}"><i class="fa fa-shopping-cart fa-fw me-2"></i>Cart</a>
+            <a class="list-group-item" th:href="@{/home/paymenthistory}"><i class="fa fa-credit-card fa-fw me-2"></i>Payment History</a>
+            <a class="list-group-item" th:href="@{/home/editprofile}"><i class="bi bi-pencil-square fa-fw me-2"></i>Edit Profile</a>
+            <a class="list-group-item text-danger bg-danger-soft-hover" th:href="@{/logout}"><i class="fas fa-sign-out-alt fa-fw me-2"></i>Sign Out</a>
 
           </div>
         </div>

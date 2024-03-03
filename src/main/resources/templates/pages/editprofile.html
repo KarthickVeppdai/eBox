@@ -21,7 +21,7 @@
         <!-- Profile picture -->
 
         <!-- Full name -->
-        <div class="col-6">
+        <div class="col-md-6">
           <label class="form-label">Full name</label>
           <div class="input-group">
             <input type="text" class="form-control" value="" placeholder="First name">
@@ -59,7 +59,7 @@
 
 
         <!-- Save button -->
-        <div class="d-sm-flex justify-content-end">
+        <div class="d-flex justify-content-end mt-4">
           <button type="button" class="btn btn-primary mb-0">Save changes</button>
         </div>
       </form>
@@ -107,8 +107,14 @@
         <div class="card-body">
           <!-- Current password -->
           <div class="mb-3">
-            <label class="form-label">Current password</label>
-            <input class="form-control" type="password" placeholder="Enter current password">
+            <label class="form-label"> Enter Current password</label>
+            <div class="input-group">
+              <input class="form-control" type="password" placeholder="Enter current password">
+              <span class="input-group-text p-0 bg-transparent">
+											<i class="far fa-eye cursor-pointer p-2 w-40px"></i>
+										</span>
+            </div>
+            <div class="rounded mt-1" id="psw-strengh"></div>
           </div>
           <!-- New password -->
           <div class="mb-3">
@@ -122,9 +128,15 @@
             <div class="rounded mt-1" id="psw-strength"></div>
           </div>
           <!-- Confirm password -->
-          <div>
-            <label class="form-label">Confirm new password</label>
-            <input class="form-control" type="password" placeholder="Enter new password">
+          <div class="mb-3">
+            <label class="form-label"> Enter Confirm password</label>
+            <div class="input-group">
+              <input class="form-control" type="password" placeholder="Enter confirm password">
+              <span class="input-group-text p-0 bg-transparent">
+											<i class="far fa-eye cursor-pointer p-2 w-40px"></i>
+										</span>
+            </div>
+            <div class="rounded mt-1" id="psw-s"></div>
           </div>
           <!-- Button -->
           <div class="d-flex justify-content-end mt-4">

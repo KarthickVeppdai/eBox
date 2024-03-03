@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/insidelayout">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+</head>
+<body>
+
+<div layout:fragment="content">
+  <div class="card bg-transparent border">
+
+    <!-- Card header START -->
+    <div class="card-header bg-light border-bottom">
+      <h5 class="mb-0">Payment History</h5>
+    </div>
+    <!-- Card header END -->
+
+    <!-- Card body START -->
+    <div class="card-body pb-0">
+      <!-- Table START -->
+      <div class="table-responsive border-0">
+        <table class="table table-dark-gray align-middle p-4 mb-0 table-hover">
+          <!-- Table head -->
+          <thead>
+          <tr>
+            <th scope="col" class="border-0 rounded-start">Payment ID</th>
+            <th scope="col" class="border-0">Subject Name</th>
+            <th scope="col" class="border-0">Date</th>
+            <th scope="col" class="border-0">Amount</th>
+            <th scope="col" class="border-0">Status</th>
+          </tr>
+          </thead>
+
+          <!-- Table body START -->
+          <tbody>
+
+          <!-- Table row -->
+          <tr>
+            <!-- Table data -->
+            <td>#254684</td>
+
+            <!-- Table data -->
+            <td>
+              <h6 class="table-responsive-title mb-0"><a href="#">Class 9 :Social</a></h6>
+            </td>
+
+            <!-- Table data -->
+            <td>29 Feb 2024</td>
+
+            <!-- Table data -->
+
+
+            <!-- Table data -->
+            <td>&#8377;39              <!-- Dropdown icon -->
+
+            </td>
+
+            <!-- Table data -->
+            <td>
+              <div class="badge bg-success bg-opacity-10 text-success">Paid</div>
+            </td>
+
+            <!-- Table data -->
+
+          </tr>
+
+          <!-- Table row -->
+          <tr>
+            <!-- Table data -->
+            <td>#123546</td>
+
+            <!-- Table data -->
+            <td>
+              <h6 class="table-responsive-title mb-0">Class 9 :Maths</h6>
+            </td>
+
+            <!-- Table data -->
+            <td>18 Feb 2024</td>
+
+
+
+            <!-- Table data -->
+            <td>&#8377;103              <!-- Dropdown icon -->
+
+            </td>
+
+            <!-- Table data -->
+            <td>
+              <div class="badge bg-orange bg-opacity-10 text-orange">Pending</div>
+            </td>
+
+            <!-- Table data -->
+
+          </tr>
+
+          <!-- Table row -->
+
+
+          <!-- Table row -->
+
+
+          <!-- Table row -->
+
+
+          <!-- Table row -->
+
+          <!-- Table row -->
+
+
+          </tbody>
+          <!-- Table body END -->
+        </table>
+      </div>
+      <!-- Table END -->
+    </div>
+    <!-- Card body END -->
+
+    <!-- Card footer START -->
+    <div class="card-footer bg-transparent">
+      <!-- Pagination START -->
+      <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
+        <!-- Content -->
+
+        <!-- Pagination -->
+        <nav class="d-flex justify-content-center mb-0" aria-label="navigation">
+          <ul class="pagination pagination-sm pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
+            <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-left"></i></a></li>
+            <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
+            <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
+            <li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Pagination END -->
+    </div>
+    <!-- Card footer END -->
+  </div>
+
+</div>
+
+</body>
+</html>
