@@ -19,6 +19,11 @@ public class MainController {
     {
         return "pages/dashboard";
     }
+    @GetMapping("/chat")
+    public String chat()
+    {
+        return "pages/chat";
+    }
 
     @GetMapping("/subscription")
     public String studentsubscription()

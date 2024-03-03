@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/insidelayout">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+
+
+  <script type="text/javascript" th:src="@{/assets/vendor/jquery/jquery.slim.min.js}"></script>
+  <script type="text/javascript" th:src="@{/assets/vendor/popper/popper.min.js}"></script>
+  <script type="text/javascript" th:src="@{/assets/vendor/bootstrap/dist/js/bootstrap.min.js}"></script>
+  <link rel="stylesheet"  th:href="@{/assets/chat/chat.css}">
+  <script type="text/javascript" th:src="@{/assets/chat/chat.js}"></script>
+
+</head>
+<body>
+
+<div layout:fragment="content">
+  <div class="row g-4">
+    <!-- Counter item -->
+    <div class="col-sm-6 col-lg-12">
+
+      <div class="chat-container bg-dark p-3 rounded " id="chatContainer">
+        <!-- Example messages -->
+        <div class="message message-receiver">
+          <p class="message-text">Hey there! How can I help you?</p>
+          <div class="clearfix"></div>
+          <p class="message-timestamp text-right">12:05 PM</p>
+        </div>
+      </div>
+    </div>
+    <div class="input-group mt-4">
+      <input type="text" class="form-control" placeholder="Type your message..." id="messageInput">
+      <div class="input-group-append">
+        <button class="btn btn-primary"  type="button" id="sendMessageBtn">Send</button>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>

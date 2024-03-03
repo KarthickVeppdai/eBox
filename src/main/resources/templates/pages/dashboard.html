@@ -8,67 +8,60 @@
 <body>
 
 <div layout:fragment="content">
-    <div class="card bg-transparent border rounded-3">
-        <!-- Card header START -->
-        <div class="card-header bg-transparent border-bottom">
-            <h3 class="mb-0">New Subject</h3>
+    <div class="row g-4 mb-3">
+        <div class="card bg-transparent border rounded-3">
+            <!-- Card header START -->
+            <div class="card-header bg-transparent border-bottom">
+                <h3 class="mb-0">Dashboard</h3>
+            </div>
+        </div>
+        <!-- Counter item -->
+        <div class="col-sm-6 col-lg-4">
+            <div class="d-flex justify-content-center align-items-center p-4 bg-warning bg-opacity-15 rounded-3">
+                <span class="display-6 text-warning mb-0"><i class="fas fa-regular fa-comment"></i></span>
+                <div class="ms-4">
+                    <div class="d-flex">
+                        <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="25"	data-purecounter-delay="200">0</h5>
+                    </div>
+                    <span class="mb-0 h6 fw-light">Chat with eBox</span>
+                </div>
+            </div>
+        </div>
+        <!-- Counter item -->
+        <div class="col-sm-6 col-lg-4">
+            <div class="d-flex justify-content-center align-items-center p-4 bg-purple bg-opacity-10 rounded-3">
+                <span class="display-6 text-purple mb-0"><i class="fas fa-solid fa-book"></i></span>
+                <div class="ms-4">
+                    <div class="d-flex">
+                        <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="25"	data-purecounter-delay="200">0</h5>
+                        <span class="mb-0 h5">K+</span>
+                    </div>
+                    <span class="mb-0 h6 fw-light">Grades Enrolled</span>
+                </div>
+            </div>
+        </div>
+        <!-- Counter item -->
+        <div class="col-sm-6 col-lg-4">
+            <div class="d-flex justify-content-center align-items-center p-4 bg-info bg-opacity-10 rounded-3">
+                <span class="display-6 text-info mb-0"><i class="fas fa-regular fa-image"></i></span>
+                <div class="ms-4">
+                    <div class="d-flex">
+                        <h5 class="purecounter mb-0 fw-bold" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-delay="300">0</h5>
+                        <span class="mb-0 h5">K</span>
+                    </div>
+                    <span class="mb-0 h6 fw-light">Images Created</span>
+                </div>
+            </div>
         </div>
     </div>
+
     <!-- Counter boxes START -->
-    <form class="bg-light border p-4 rounded-3 z-index-9 position-relative">
-        <div class="row g-1">
-            <!-- Input -->
-
-            <!-- Select item -->
-            <div class="col-xl-10">
-                <div class="row g-3">
-                    <div class="col-xl-3">
-
-                    </div>
-                    <!-- Select items -->
-                    <div class="col-sm-6 col-md-3 pb-2 pb-md-0">
-                        <select class="form-select form-select-sm js-choice" aria-label=".form-select-sm example">
-                            <option value="">Class</option>
-                            <option>Class 1</option>
-                            <option>Class 2</option>
-                            <option>Class 3</option>
-                            <option>Class 4</option>
-                            <option>Class 5</option>
-                            <option>Class 6</option>
-                            <option>Class 7</option>
-                            <option>Class 8</option>
-                            <option>Class 9</option>
-                            <option>Class 10</option>
-                        </select>
-                    </div>
-
-                    <!-- Search item -->
-
-
-                    <!-- Search item -->
-                    <div class="col-sm-6 col-md-3 pb-2 pb-md-0">
-                        <select class="form-select form-select-sm js-choice" aria-label=".form-select-sm example">
-                            <option value="">Subjects</option>
-                            <option>English</option>
-                            <option>Maths</option>
-                            <option>Science</option>
-                            <option>Socail Science</option>
-                        </select>
-                    </div>
-
-                </div> <!-- Row END -->
-            </div>
-            <!-- Button -->
-            <div class="col-xl-2">
-                <button type="button" class="btn btn-primary mb-0 rounded z-index-1 w-100"><i class="fas fa-plus-circle"></i>Add Subject</button>
-            </div>
-        </div> <!-- Row END -->
-    </form>    <!-- Counter boxes END -->
+    <!-- Counter boxes END -->
 
     <div class="card bg-transparent border rounded-3">
         <!-- Card header START -->
         <div class="card-header bg-transparent border-bottom">
-            <h3 class="mb-0">My Subject List</h3>
+            <h3 class="mb-0">My Subscription List,Go to Chat</h3>
         </div>
         <!-- Card header END -->
 
@@ -86,7 +79,7 @@
                     <thead>
                     <tr>
                         <th scope="col" class="border-0 rounded-start">Subjects</th>
-                        <th scope="col" class="border-0">Learned</th>
+                        <th scope="col" class="border-0">Answered</th>
                         <th scope="col" class="border-0 rounded-end">Continue</th>
                         <th scope="col" class="border-0 rounded-end">Remove</th>
                     </tr>
@@ -122,10 +115,10 @@
                         <!-- Table data -->
                         <td>
 
-                            <button class="btn btn-info-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Continue"><i class="bi bi-play-circle me-1"></i></button>
+                            <button class="btn btn-info-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Continue to chat"><i class="bi bi-play-circle me-1"></i></button>
                         </td>
                         <td>
-                            <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Block"><i class="fas fa-ban"></i></button>
+                            <button class="btn btn-danger-soft btn-round mb-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Remove"><i class="fas fa-ban"></i></button>
                         </td>
                     </tr>
 
